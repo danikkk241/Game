@@ -1,13 +1,21 @@
 body {
-  background: url('https://png.pngtree.com/thumb_back/fw800/background/20200811/pngtree-climber-and-purple-mountain-background-image_389792.jpg') no-repeat center/cover;
+	/* Фоновое изображение */
+	background: url('https://png.pngtree.com/thumb_back/fw800/background/20200811/pngtree-climber-and-purple-mountain-background-image_389792.jpg') no-repeat center/cover;
+	
+	/* Шрифт для текста в теле страницы */
 	font-family: Georgia, serif;
+	
+	/* Выравнивание текста по центру */
 	text-align: center;
 }
 
 h2 {
+	/* Выравнивание заголовка h2 по центру */
 	text-align: center;
 }
+
 .inner {
+	/* Стили для ячеек с крестиками-ноликами */
 	width: 100px;
 	height: 80px;
 	font-size: 30px;
@@ -17,44 +25,64 @@ h2 {
 	border: 5px solid #333;
 	margin: 10px;
 	cursor: pointer;
-
+	
+	/* Тени и эффекты */
 	box-shadow: 3px 4px 1px 2px rgba(145, 54, 105, 0.3);
-	text-shadow:  2px 3px 1px rgba(255, 255, 255, 0.3);
+	text-shadow: 2px 3px 1px rgba(255, 255, 255, 0.3);
+	
+	/* Запрет выделения текста пользователем */
 	user-select: none;
 }
+
 table {
-margin: auto;
+	/* Центрирование таблицы на странице */
+	margin: auto;
 }
 
 #win_block {
+	/* Скрытие блока с информацией о победе */
 	display: none;
+	
+	/* Выравнивание текста по центру */
 	text-align: center;
+	
+	/* Отступ сверху */
 	padding-top: 20px;
+	
+	/* Размер шрифта */
 	font-size: 20px;
 }
-#win_block .again{
+
+#win_block .again {
+	/* Стили для кнопки "Начать новую игру!" */
 	font-weight: bold;
 	cursor: pointer;
-color: yellow;
-border-bottom: 12px solid white;
-border-color: #9369;
-}
-#win_block .again:hover{
-	border-color: transparent;
+	color: yellow;
 	
+	/* Подчеркивание снизу */
+	border-bottom: 12px solid white;
+	border-color: #9369;
 }
 
+#win_block .again:hover {
+	/* Стили при наведении на кнопку "Начать новую игру!" */
+	border-color: transparent;
+}
 
 #game {
+	/* Позиционирование элемента "game" */
 	position: relative;
 }
-#game .table{
+
+#game .table {
+	/* Стили для таблицы с ячейками */
 	display: table;
-	
 	margin: 0 auto;
 	position: relative;
 }
-#game .table .winning{
+
+#game .table .winning {
+	/* Стили для блока с информацией о победе */
 	display: none;
 	width: 100%;
 	height: 100%;
@@ -64,30 +92,36 @@ border-color: #9369;
 }
 
 #game table tr:first-child div {
+	/* Удаление верхнего отступа у ячеек в первом ряду */
 	margin-top: 0;
 }
+
 #game table tr:last-child div {
-	margin-bottom: 0;
-}
-#game table tr td:first-child div {
+	/* Удаление нижнего отступа у ячеек в последнем ряду */
+	margin-bottom: 0;#game table tr td:first-child div {
+	/* Удаление левого отступа у ячеек в первом столбце */
 	margin-left: 0;
 }
+
 #game table tr td:last-child div {
+	/* Удаление правого отступа у ячеек в последнем столбце */
 	margin-right: 0;
 }
 
-/*DARK MODE*/
+/* Режим ДОПОЛНИТЕЛЬНОЙ ТЕМЫ */
 
 #changeBackgroundBtn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #9333FF;
-  color: white;
-  border: none;
-  cursor: pointer;
+	/* Стили для кнопки "Поменять тему" */
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #9333FF;
+	color: white;
+	border: none;
+	cursor: pointer;
 }
 
 #changeBackgroundBtn:hover {
-  background-color: #246;
+	/* Стили при наведении на кнопку "Поменять тему" */
+	background-color: #246;
 }
