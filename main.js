@@ -206,3 +206,16 @@ function removerEvent(el, ev, func){
 		
 	}
 }
+
+var changeBackgroundBtn = document.getElementById("changeBackgroundBtn");
+
+changeBackgroundBtn.addEventListener("click", function() {
+  var body = document.body;
+  var currentBackground = body.style.backgroundImage;
+  
+  if (currentBackground === 'url("https://png.pngtree.com/thumb_back/fw800/background/20200811/pngtree-climber-and-purple-mountain-background-image_389792.jpg")') {
+    body.style.backgroundImage = 'url("https://damion.club/uploads/posts/2022-03/1646746581_1-damion-club-p-fioletovie-gori-art-1.jpg")';
+  } else {
+    body.style.backgroundImage = 'url("https://png.pngtree.com/thumb_back/fw800/background/20200811/pngtree-climber-and-purple-mountain-background-image_389792.jpg")';
+  }
+});
